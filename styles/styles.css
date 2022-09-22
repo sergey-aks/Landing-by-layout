@@ -1,1 +1,98 @@
-/* Landing by Layout Styles */
+/* Styles of Landing by Layout */
+
+/* Fonts */
+body,
+a {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+title {
+    font-family: 'Yeseva One', cursive;
+}
+
+/* Reset styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+body * {
+    box-sizing: border-box;
+}
+
+button {
+    outline: 0;
+    border: 0;
+}
+
+
+/* Main Styles */
+.header {
+    background: #131313;
+}
+
+.header-content-wrapper {
+    max-width: 1256px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    line-height: 15px;
+    margin: 0 auto;
+    padding: 24px 0 22px;
+}
+
+.logo,
+.phone a {
+    color: #E3B873;
+}
+
+.phone {}
+
+.phone a {
+    text-decoration: none;
+}
+
+.header-navigation {
+    display: flex;
+}
+
+.header-navigation li {
+    list-style: none;
+    margin-right: 47px;
+}
+
+.header-navigation li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Buttons Begin */
+.button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.button-soft-corners {
+    border-radius: 2px;
+}
+
+.button-header {
+    padding: 13px 33px;
+}
+
+/* Buttons End */
+.top-block{
+    background-size: cover;
+    height: 707px;
+}
