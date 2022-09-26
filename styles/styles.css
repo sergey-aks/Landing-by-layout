@@ -1,4 +1,4 @@
-/* Styles of Landing by Layout */
+/* Styles for Landing by Layout */
 
 body {
     margin: 0;
@@ -6,6 +6,9 @@ body {
 }
 
 body * {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -19,12 +22,6 @@ button {
     cursor: pointer;
 }
 
-body * {
-    font-family: 'Nunito Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-}
-
 h1,
 h1 span,
 h2,
@@ -32,7 +29,7 @@ h3,
 h4,
 h5,
 h6,
-title {
+.title {
     font-family: 'Yeseva One', serif;
     font-style: normal;
     font-weight: 400;
@@ -46,11 +43,18 @@ h1 {
     line-height: 53px;
 }
 
+h2.section-title {
+    font-size: 27px;
+    line-height: 37px;
+}
+
 /* Colors Begin */
 h1,
 .button,
 .header-navigation li a,
-.top-block-content p {
+.top-block-content p,
+.completed-projects-text p,
+.completed-projects-info-block__text {
     color: #FFFFFF;
 }
 
@@ -58,13 +62,24 @@ h1,
 .header-navigation li a:hover,
 .header-navigation li a:active,
 .phone a,
-.main-title-city {
+.main-title__city,
+.section-title,
+.completed-projects-choose-city__item:hover,
+.completed-projects-info-block__title {
     color: #E3B873;
+}
+
+.completed-projects-choose-city__item {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .header,
 .completed-projects {
     background-color: #131313;
+}
+
+.block-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Colors End */
@@ -119,16 +134,16 @@ h1,
     border-radius: 2px;
 }
 
-.button-header {
+.header-content-wrapper__button {
     padding: 13px 33px;
 }
 
-.top-block-content button {
+.top-block-content .button {
     width: 207px;
     padding: 20px 0;
 }
 
-.button-top-block-right {
+.top-block__button-right {
     background: transparent;
     border: 1px solid #FFFFFF;
     box-shadow: none;
@@ -144,24 +159,24 @@ h1,
     position: relative;
 }
 
-.top-block-overlay {
+.block-overlay {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .top-block .conteiner {
     z-index: 1;
     position: relative;
+    padding-top: 194px;
 }
 
 .top-block-content {
-    padding-top: 194px;
-    padding-left: 134px;
-    width: 670px;
+    margin: 0 auto;
+    max-width: 1171px;
+    padding-right: 630px;
 }
 
 .top-block-content p {
@@ -169,7 +184,110 @@ h1,
     line-height: 36px;
 }
 
-.top-block-buttons-wrapper {
+.top-block__buttons-wrapper {
     display: flex;
 }
 
+.completed-projects {
+    padding-top: 100px;
+    padding-bottom: 416px;
+}
+
+.completed-projects-content-wrapper {
+    margin: 0 auto;
+    max-width: 1171px;
+    display: flex;
+    position: relative;
+}
+
+.completed-projects-text p {
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.completed-projects-choose-city {
+    margin-bottom: 53px;
+}
+
+.completed-projects-choose-city__item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-right: 60px;
+}
+
+.completed-projects-choose-city__item:last-child {
+    margin-right: 0;
+}
+
+.completed-projects-choose-city__item:hover {
+    border-bottom: 1px solid;
+    padding-bottom: 7px;
+}
+
+.completed-projects-left {
+    padding-top: 67px;
+}
+
+.completed-projects-right {
+    margin-left: 50px;
+}
+
+.completed-projects-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 34px 0;
+    margin-top: 50px;
+}
+
+.completed-projects-info-block__title {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 9px;
+}
+
+.completed-projects-info-block__text {
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.completed-projects-control {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.completed-projects-control__arrow-right img {
+    transform: rotate(180deg);
+}
+
+.completed-projects-control-dots-wrapper {
+    display: flex;
+}
+
+.completed-projects-control__dot {
+    margin-right: 18px;
+    opacity: 0.3;
+}
+.completed-projects-control__dot .completed-projects-control__dot_active{
+    opacity: 1;
+}
+
+.completed-projects-control__dot:first-child {
+    margin-left: 30px;
+}
+
+.completed-projects-control__dot:last-child {
+    margin-right: 30px;
+}
+.completed-projects-control__arrow-left,
+.completed-projects-control__arrow-right,
+.completed-projects-control__dot{
+    cursor: pointer;
+}
