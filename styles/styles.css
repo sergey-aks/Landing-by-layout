@@ -674,9 +674,9 @@ input.agree-checkbox-block__checkbox {
 .types-of-repair-item__info {
     height: 286px;
     padding: 25px 0 0 34px;
-    -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-    -moz-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .types-of-repair-item__title {
