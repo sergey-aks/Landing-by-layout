@@ -62,7 +62,7 @@
                         of materials due to the organization of work</p>
                     <div class="top-block__buttons-wrapper">
                         <button class="button">CALCULATE THE COST</button>
-                        <button class="button top-block__button-right">SUBMIT YOUR APPLICATION</button>
+                        <button class="button top-block__button-right"><span class="top-block__button-right-hide-mobile">SUBMIT YOUR</span> APPLICATION</button>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,10 @@
                             </a>
                         </div>
                         <div class="completed-projects-slider">
-                            <img src="./images/slider/photo-1.jpg" alt="">
+                            <div class="completed-projects-slider__image-wrapper">
+                                <img src="./images/slider/photo-1.jpg" alt="">
+                                <img src="./images/slider/photo-2.jpg" alt="">
+                            </div>
                             <div class="completed-projects-slider__control-wrapper">
                                 <div class="completed-projects-slider__control-left">
                                     <img src="./images/icons/slider-control.svg" alt="left">
@@ -182,18 +185,18 @@
                 <div class="send-name-phone-form-wrapper">
                     <form class="send-name-phone-form" action="" method="post">
                         <div class="send-name-phone-form__input-button-wrapper">
-                            <div class="send-name-phone-form__name-wrapper">
+                            <div class="form-input-block send-name-phone-form__name-wrapper">
                                 <label for="send-name-phone-form__name-input">Name</label>
                                 <input id="send-name-phone-form__name-input" type="text"
                                     placeholder="What is your name:">
                             </div>
-                            <div class="send-name-phone-form__phone-wrapper">
+                            <div class="form-input-block send-name-phone-form__phone-wrapper">
                                 <label for="send-name-phone-form__name-phone">Phone</label>
                                 <input id="send-name-phone-form__name-phone" type="number"
                                     placeholder="Your phone number:">
                             </div>
                             <div class="send-name-phone-form__button-wrapper">
-                                <button class="button send-name-phone-form__button">
+                                <button class="form-button-block button send-name-phone-form__button">
                                     Submit
                                 </button>
                             </div>
@@ -387,6 +390,17 @@
                             <img src="./images/realize-fantasies-pict-4.jpg" alt="">
                         </div>
                     </div>
+                    <div class="realize-fantasies-mobile-slider">
+                        <img src="./images/slider-realize/realize-1.jpg" alt="">
+                        <div class="completed-projects-slider__control-wrapper">
+                            <div class="completed-projects-slider__control-left">
+                                <img src="./images/icons/slider-control.svg" alt="left">
+                            </div>
+                            <div class="completed-projects-slider__control-right">
+                                <img src="./images/icons/slider-control.svg" alt="right">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -414,13 +428,9 @@
                                     </div>
                                 </div>
                                 <p class="our-clients-item__text">
-                                    I want to thank the guys for their work. We put your shower part in repair. I am
-                                    very grateful that i referred to the repair as to my own. Great thanks i express the
-                                    project to georgia for its professionalism and approach.
+                                    I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach.
                                     <br>
-                                    The repair process was turned out in terms, faster than anticipated. Team mobile and
-                                    professional. Works performed qualitatively without comments. Quality satisfied.
-                                    Prices democratic. I recommend these masters.
+                                    The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
                                 </p>
                             </div>
                             <div class="our-clients-item__flat">
@@ -515,18 +525,18 @@
                     <form class="any-questions-form" action="" method="post">
                         <div class="leave-request-content-request__items-wrapper">
                             <div class="any-questions-form__name-phone-wrapper">
-                                <div class="leave-request-content-request__item">
+                                <div class="form-input-block leave-request-content-request__item">
                                     <label for="any-questions-form__name-input">Name</label>
                                     <input id="any-questions-form__name-input" type="text"
                                         placeholder="What is your name:">
                                 </div>
-                                <div class="leave-request-content-request__item">
+                                <div class="form-input-block leave-request-content-request__item">
                                     <label for="any-questions-form__phone-input">Phone</label>
                                     <input id="any-questions-form__phone-input" type="number"
                                         placeholder="Your phone number:">
                                 </div>
                             </div>
-                            <div class="leave-request-content-request__item">
+                            <div class="form-input-block leave-request-content-request__item">
                                 <label for="any-questions-form__email-input">Question</label>
                                 <input id="any-questions-form__email-input" type="text"
                                     placeholder="What is your name:">
@@ -545,7 +555,7 @@
                             </div>
                         </div>
                         <div class="any-questions-form-button-wrapper">
-                            <button class="button any-questions-form-button">Submit</button>
+                            <button class="form-button-block button any-questions-form-button">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -555,12 +565,14 @@
             <div class="block-overlay"></div>
             <div class="conteiner">
                 <div class="contacts-map-content">
-                    <h3 class="title contacts-map__title">
-                        Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
-                    </h3>
-                    <div class="contacts-map-icons-wrapper">
-                        <img src="./images/icons/email.svg" alt="email">
-                        <img src="./images/icons/inst-icon.svg" alt="instagram">
+                    <div class="contacts-map-title-icons-wrapper">
+                        <h3 class="title contacts-map__title">
+                            Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
+                        </h3>
+                        <div class="contacts-map-icons-wrapper">
+                            <img src="./images/icons/email.svg" alt="email">
+                            <img src="./images/icons/inst-icon.svg" alt="instagram">
+                        </div>
                     </div>
                     <div class="contacts-map-map-wrapper"></div>
                 </div>

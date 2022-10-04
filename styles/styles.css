@@ -141,6 +141,10 @@ footer {
 }
 
 .block-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.top-block .block-overlay {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -515,6 +519,10 @@ input.agree-checkbox-block__checkbox {
 
 .completed-projects-slider {
     position: relative;
+}
+
+.completed-projects-slider__image-wrapper img:nth-child(2) {
+    display: none;
 }
 
 .completed-projects-slider__control-wrapper {
@@ -990,11 +998,53 @@ footer .header-content-wrapper {
     padding: 48px 0;
 }
 
+.realize-fantasies-mobile-slider {
+    display: none;
+}
+
 /* Media Queries */
 
 @media (max-width: 1300px) {
+
+    /* Colors Begin */
+    .online-control {
+        background-color: #131313;
+    }
+
+    .phone a,
+    .online-control__text,
+    .send-name-phone-form__input-button-wrapper input,
+    .send-name-phone-form__input-button-wrapper input::placeholder,
+    .send-name-phone-form-checkbox-wrapper {
+        color: #fff;
+    }
+
+    .send-name-phone-form__input-button-wrapper label {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .any-questions,
+    .contacts-map {
+        background-color: #181818;
+    }
+
+    /* Colors End */
+
     .conteiner {
         margin: 0 18px;
+    }
+
+    .top-block {
+        height: 600px;
+    }
+
+    .top-block .conteiner {
+        padding-top: 154px;
+    }
+
+    h1 {
+        font-size: 23px;
+        line-height: 132.83%;
     }
 
     h2.section-title,
@@ -1004,8 +1054,27 @@ footer .header-content-wrapper {
         text-align: center;
     }
 
+    h3.any-questions__title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    h3.contacts-map__title {
+        font-size: 18px;
+    }
+
+    .top-block-content p {
+        font-size: 14px;
+        line-height: 135.84%;
+        margin-bottom: 55px;
+    }
+
     .header-navigation li {
         margin-right: 27px;
+    }
+
+    .phone a {
+        text-decoration: none;
     }
 
     .types-of-repair-item__info-wrapper {
@@ -1020,9 +1089,55 @@ footer .header-content-wrapper {
         margin-right: 0;
     }
 
+    .leave-request,
+    .our-clients,
+    .realize-fantasies .block-overlay,
+    .realize-fantasies-list,
+    .realize-fantasies-right,
+    .contacts-map .block-overlay {
+        display: none;
+    }
+
+    .top-block-content,
+    .completed-projects-content-wrapper,
+    .video-conteiner,
+    .online-control__text,
+    .send-name-phone-form-wrapper,
+    .realize-fantasies-content,
+    .any-questions-content,
+    .contacts-map-content {
+        width: auto;
+        max-width: 680px;
+    }
+
+    .completed-projects {
+        padding-top: 36px;
+        padding-bottom: 0;
+    }
+
     .completed-projects-content-wrapper {
         flex-direction: column;
-        max-width: 680px;
+    }
+
+    .top-block__buttons-wrapper,
+    .top-block__buttons-wrapper button {
+        display: block;
+    }
+
+    .top-block-content .button {
+        width: 100%;
+    }
+
+    .top-block-content .button:first-child {
+        margin-bottom: 26px;
+    }
+
+    .top-block__button-right-hide-mobile {
+        display: none;
+    }
+
+    .top-block__button-right {
+        margin-left: 0;
     }
 
     .completed-projects-left {
@@ -1039,7 +1154,6 @@ footer .header-content-wrapper {
         text-align: center;
         font-size: 11px;
         line-height: 158.48%;
-
     }
 
     .completed-projects-control,
@@ -1047,8 +1161,21 @@ footer .header-content-wrapper {
         display: none;
     }
 
-    .completed-projects-slider img {
+    .completed-projects-slider img,
+    .video-conteiner img {
         width: 100%;
+    }
+
+    .video-conteiner .video-conteiner__control img {
+        width: 37px;
+    }
+
+    .completed-projects-slider__image-wrapper img:nth-child(1) {
+        display: none;
+    }
+
+    .completed-projects-slider__image-wrapper img:nth-child(2) {
+        display: inline;
     }
 
     .completed-projects-slider__control-wrapper {
@@ -1058,14 +1185,215 @@ footer .header-content-wrapper {
     .completed-projects-wrapper-info-control {
         position: static;
     }
+
+    .completed-projects-right {
+        margin-top: 70px;
+    }
+
+    .completed-projects-info {
+        margin-top: 36px;
+    }
+
+    .completed-projects-info-block__title {
+        font-size: 14px;
+        line-height: 138.6%;
+    }
+
+    .online-control__text {
+        font-size: 11px;
+        line-height: 169.8%;
+    }
+
+    .completed-projects-info-block__text {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .online-control {
+        margin-top: 0;
+        padding-top: 50px;
+    }
+
+    .video-conteiner {
+        margin-top: 40px;
+    }
+
+    .any-questions-form,
+    .send-name-phone-form {
+        position: relative;
+    }
+
+    .send-name-phone-form__input-button-wrapper {
+        display: block;
+    }
+
+    .send-name-phone-form__input-button-wrapper input {
+        background-color: transparent;
+        border-bottom: 1px solid;
+        width: 100%;
+    }
+
+    .form-input-block {
+        margin-bottom: 63px;
+    }
+
+    .any-questions-form-button-wrapper {
+        width: auto;
+        margin-top: 65px;
+    }
+
+    .form-button-block {
+        width: 100%;
+        position: absolute;
+        bottom: -26px;
+    }
+
+    .send-name-phone-form-checkbox-wrapper {
+        margin: -35px 0 0;
+    }
+
+    .send-name-phone-form {
+        padding-bottom: 90px;
+    }
+
+    .types-of-repair {
+        margin-top: 86px;
+    }
+
+    .realize-fantasies {
+        background-image: none;
+        margin-top: 55px;
+        height: auto;
+    }
+
+    .realize-fantasies-content {
+        display: block;
+    }
+
+    .realize-fantasies-left {
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .realize-fantasies-mobile-slider {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .any-questions {
+        margin-top: -130px;
+        position: relative;
+        z-index: 0;
+    }
+
+    .any-questions-content {
+        padding-top: 170px;
+    }
+
+    .any-questions-form__name-phone-wrapper {
+        display: block;
+    }
+
+    .any-questions-form {
+        width: auto;
+    }
+
+    .leave-request-content-request__item input {
+        border-bottom: 1px solid #fff;
+    }
+
+    .leave-request-content-request__item:last-child {
+        margin-bottom: 63px;
+    }
+
+    .leave-request-content-request__items-wrapper>.form-input-block.leave-request-content-request__item {
+        margin-bottom: 22px;
+    }
+
+    .any-questions-form-checkbox-wrapper {
+        margin: 0;
+    }
+
+    .any-questions-form-button-wrapper .form-button-block {
+        position: static;
+    }
+
+    .contacts-map {
+        background-image: none;
+        margin-top: 0;
+    }
+
+    .contacts-map-content {
+        padding: 10px 0 49px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contacts-map-map-wrapper {
+        width: 100%;
+        height: 255px;
+        background-size: cover;
+    }
+
+    .contacts-map__title {
+        width: auto;
+    }
+
+    .contacts-map-title-icons-wrapper {
+        margin-top: 45px;
+    }
+
+    .contacts-map-icons-wrapper {
+        margin-bottom: 0;
+    }
+
+    .contacts-map-icons-wrapper img {
+        height: 39px;
+    }
 }
 
 @media (max-width: 1024px) {
+    .top-block {
+        height: 476px;
+    }
+
+    .top-block .conteiner {
+        padding-top: 85px;
+    }
+
     .header-navigation {
         display: none;
     }
 
+    .types-of-repair-items {
+        display: block;
+        max-width: 392px;
+    }
+
     .types-of-repair-item {
         margin-right: 0;
+        height: 630px;
+    }
+
+    .types-of-repair-item__info-wrapper {
+        margin: 0;
+        padding-top: 255px;
+    }
+
+    .area-of-apartment {
+        padding: 8px 17px 9px;
+        font-size: 15px;
+        line-height: 138.6%;
+    }
+
+    .header-content-wrapper__button {
+        display: none;
+    }
+
+    footer {
+        display: none;
     }
 }
