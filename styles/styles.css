@@ -262,7 +262,7 @@ input.agree-checkbox-block__checkbox {
     transition: .2s;
 }
 
-.agree-checkbox-block__checkbox:checked+.agree-checkbox-block__fake-checkbox::before {
+.agree-checkbox-block__checkbox:checked+.agree-checkbox-block__label-for-checkbox>.agree-checkbox-block__fake-checkbox::before {
     opacity: 1;
 }
 
@@ -935,7 +935,7 @@ input.agree-checkbox-block__checkbox {
 .any-questions {
     margin-top: -300px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .any-questions-content {
